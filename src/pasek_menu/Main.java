@@ -1,6 +1,7 @@
 package pasek_menu;
 
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -20,9 +21,14 @@ public class Main extends JFrame{
 //        JMenu menuPlik = new JMenu("Plik");
 //        pasekMenu.add(menuPlik);
 
+
         JMenu menuPlik = pasekMenu.add(new JMenu("Plik"));
 //        JMenuItem podMenuNowy = menuPlik.add("Nowy"); //można i tak
-        JMenuItem podMenuNowy = menuPlik.add(new JMenuItem("Nowy"));
+
+        JMenuItem podMenuNowy = menuPlik.add(new JMenuItem("Nowy", new ColorIcons(Color.RED)));
+
+
+
 
         podMenuNowy.addActionListener(new ActionListener() {
             @Override
