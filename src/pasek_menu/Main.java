@@ -62,6 +62,7 @@ public class Main extends JFrame{
 
     private JMenuBar pasekMenu = new JMenuBar();
     private JCheckBoxMenuItem tylkoDoOdczytu = new JCheckBoxMenuItem("Tylko do odczytu");
+//    private JRadioButtonMenuItem radio;
 
     public static void main(String[] args) {
         new Main().setVisible(true);
